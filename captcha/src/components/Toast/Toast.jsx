@@ -8,6 +8,10 @@ export function Toast({ hideToast, toast }) {
       <button
         type="button"
         className="icon--button"
+        style={{
+          background: "var(--text-white)",
+          borderColor: "transparent",
+        }}
         onClick={() => {
           console.log("toast bar closed");
           hideToast();

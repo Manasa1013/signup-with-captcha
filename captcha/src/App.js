@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Signup } from "./components/Signup/Signup";
 import { Toast } from "./components/Toast/Toast";
+import { Home } from "./Pages/Home";
 
 function App() {
   const [toast, setToast] = useState({
@@ -26,11 +27,12 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<Signup showToastMessage={showToastMessage} />}
+          element={<Signup showToast={showToastMessage} />}
         ></Route>
+        <Route path="/home" element={<Home />}></Route>
         <Route
           path="*"
-          element={<Signup showToastMessage={showToastMessage} />}
+          element={<Signup showToast={showToastMessage} />}
         ></Route>
       </Routes>
       <Toast hideToast={hideToast} toast={toast} />
