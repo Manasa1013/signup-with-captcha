@@ -45,7 +45,6 @@ export function Signup({ showToast }) {
       captchaString = captchaString + captchaChar;
     }
 
-    console.log(captchaString);
     return captchaString;
   }
 
@@ -86,7 +85,7 @@ export function Signup({ showToast }) {
     }
   }
   function submitHandler() {
-    if (!validateCaptcha) return false;
+    if (!validateCaptcha()) return false;
     else if (
       field.userName.length <= 0 ||
       field.emailID.length <= 0 ||
@@ -100,6 +99,7 @@ export function Signup({ showToast }) {
     ) {
       showToast("Please correct errors at the fields");
     } else {
+      console.log(validateCaptcha());
       showToast("Successfully signed up");
       navigate("/home");
       resetValues();
@@ -284,7 +284,6 @@ export function Signup({ showToast }) {
                 return false;
               }}
               onChange={(e) => {
-                console.log(e.target.value);
                 setCaptchaInput(() => e.target.value);
               }}
               onBlur={(e) => {}}

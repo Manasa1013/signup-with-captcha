@@ -14,3 +14,23 @@
 .hide {
     visibility: hidden;
 }
+@media screen and (min-width : 420px) and (max-width : 600px) {
+    .toast {
+        max-width: 60%;
+    }
+
+}
+
+@media screen and (min-width : 600px) and (max-width : 768px) {
+    .toast {
+        max-width: 40%;
+    }
+
+}
+
+@media screen and (min-width : 768px) {
+    .toast {
+        max-width: 30%;
+    }
+
+}

@@ -41,7 +41,7 @@
 
 .crossbutton--position {
     position: absolute;
-    bottom: 92%;
+    bottom: 90%;
     left: 74%;
 }
 
@@ -61,7 +61,8 @@
     color: var(--background-primary);
     opacity: 0.8;
     width: 100%;
-    font-weight: 550;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .button:hover {
@@ -78,8 +79,8 @@ hr {
 }
 
 .label {
-    font-weight: 300;
-    font-size: 0.85rem;
+    font-weight: 400;
+    font-size: 1rem;
     display: block;
     padding: 0.25rem 0.5rem 0.25rem 0;
     text-align: left;
@@ -126,7 +127,7 @@ hr {
     border-radius: 0.25rem;
     border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
-    padding: 0.5rem 0.5rem 0.54rem 0.5rem;
+    padding: 0.5rem;
     border: 0.125rem solid transparent;
 }
 
@@ -191,7 +192,6 @@ hr {
 .link--secondary {
     text-decoration: none;
     color: var(--primary-green);
-
 }
 .dashed-line{
     margin: 0.5rem 0;
