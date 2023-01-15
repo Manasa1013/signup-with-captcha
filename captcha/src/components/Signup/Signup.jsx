@@ -48,7 +48,7 @@ export function Signup({ showToastMessage }) {
               console.log("blurred first name");
             }}
           />
-          <p className="error-text">error at first name</p>
+          <p className="error-text"></p>
         </div>
         <div className="field-box">
           <input
@@ -62,7 +62,7 @@ export function Signup({ showToastMessage }) {
               setFields((prev) => ({ ...prev, lastName: e.target.value }));
             }}
           />
-          <p className="error-text">error at last name</p>
+          <p className="error-text"></p>
         </div>
         <div className="field-box">
           <input
@@ -76,7 +76,7 @@ export function Signup({ showToastMessage }) {
               setFields((prev) => ({ ...prev, email: e.target.value }));
             }}
           />
-          <p className="error-text">error at email field</p>
+          <p className="error-text"></p>
         </div>
         <div className="field-box" style={{ display: "inline" }}>
           <input
@@ -99,20 +99,13 @@ export function Signup({ showToastMessage }) {
           >
             <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
           </button>
-          <p className="error-text">error at password</p>
+          <p className="error-text"></p>
         </div>
         <div className="captcha-container">
           <output className="captcha--text">{captcha}</output>
-          <canvas width="70" height="15" style={{ border: "1px solid green" }}>
+          {/* <canvas width="70" height="15" style={{ border: "1px solid green" }}>
             {" "}
-          </canvas>
-          <img
-            src="../assets/captcha.jpg"
-            width="50"
-            height="50"
-            alt="captcha"
-          />
-          <img src="../../favicon.ico" width="50" height="50" alt="captcha" />
+          </canvas> */}
           <button
             type="button"
             className="icon--button"
