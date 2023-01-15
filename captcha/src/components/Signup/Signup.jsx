@@ -23,9 +23,7 @@ export function Signup({ showToastMessage }) {
     console.log(captchaString);
     return captchaString;
   }
-  function setfieldValuesHandler(fieldName, targetValue) {
-    setFields((prev) => ({ ...prev, fieldName: targetValue }));
-  }
+
   useEffect(() => {
     setCaptcha(() => createCaptcha());
     //eslint-disable-next-line
